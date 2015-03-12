@@ -1,0 +1,19 @@
+/**
+ * Polaroids placeholder
+ */
+/* line 8, ../scss/polaroids.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../scss/polaroids.scss */
+#polaroids {
+  position: relative;
+  padding: 15px;
+  overflow: hidden;
+  *zoom: 1;
+  text-align: center;
+  pointer-events: none;
+}
