@@ -1,0 +1,111 @@
+@import "compass/css3";
+
+/*
+
+  # # # # # # # # # # # 
+  #                   #
+  #                   #
+  #                   #
+  #     POLAROIDS     #
+  #                   #
+  #                   #
+  #                   #
+  # # # # # # # # # # # 
+
+*/
+
+// CONFIGURATION
+$color:         white;  // white default
+$size:          306px;  // width (and height)
+$border:         15px;
+$margin:         15px;
+$border-title:   30px;  // title's playholder (min 40px to show it)
+$rotation:         0;  // 15deg Example: 15 => from -15 to 15deg
+//--
+
+
+// BORDERS
+$border-title-value: $border-title + $border;
+
+// DIMENSIONS Width and Heigh
+$width: $size;
+$height: $width + $border-title - $border;
+
+// ROTATION
+// Random Positive or Negative Number (http://stackoverflow.com/a/8771826)
+@if($rotation<=0){
+  $rotation: 0deg;
+} @else {
+  $rotation-range: ceil($rotation/3);
+  $rotation-level: random($rotation-range*2)+$rotation-range; 
+  $negative-positive-value: round(random()) * 2 - 1; // get 1 or -1
+  $rotation: $rotation-level * $negative-positive-value * 1deg;
+}
+
+* { @include box-sizing(border-box); }
+
+body {
+  background: #f5f5f5 url(http://fc01.deviantart.net/fs30/f/2008/148/c/3/Wood_floor_by_gnrbishop.jpg);
+  background-size: cover;
+}
+
+#polaroids{
+  position: relative;
+  padding: $margin;
+  
+  // Polaroid
+  .polaroid {  
+    position: relative;
+    display: block;
+    float: left;
+    z-index: 1;
+    
+    @include rotate($rotation);
+    overflow: hidden;    
+    width: $width;
+    height: $height;
+    margin-bottom: $margin;
+    margin-right: $margin;
+    
+    border: $border solid $color;
+    border-bottom: $border-title-value solid $color;
+    background: #1e1c18;
+    @include box-shadow(15px 15px 20px 0 rgba(0,0,0,.2));
+    @include transition(0.6s);
+    //@include transform( rotateY(0deg));
+    
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      @include animation(develop 10s ease-in);
+    }
+  }
+  
+  .polaroid{
+    .caption{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      //@include transition(opacity 3s);
+    }
+    &:hover .caption{
+      opacity: 1;    
+    }
+  }
+  
+  .polaroid.active{
+    z-index: 10;
+    @include transform( scale(2));
+  }
+  
+  
+}
+
+@include keyframes(develop) {
+    0% { opacity: 0; @include filter(saturate(0%)) }
+   70% { opacity: 1; @include filter(saturate(30%)) }
+  100% { opacity: 1; @include filter(saturate(100%)) }
+}
+
