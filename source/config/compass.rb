@@ -2,11 +2,11 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "images"
-javascripts_dir = "js"
-fonts_dir = "fonts"
+css_dir = "build/assets/css"
+sass_dir = "source/assets/sass"
+images_dir = "build/assets/images"
+javascripts_dir = "build/assets/js"
+fonts_dir = "build/assets/fonts"
 output_style = :expanded
 
 relative_assets = true

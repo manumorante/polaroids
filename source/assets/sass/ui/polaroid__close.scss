@@ -1,16 +1,15 @@
 /**
  * Polaroid Close button
  */
-
 @import "compass";
-@import "config";
+@import "../config";
 
-.polaroid .close{
+.polaroid .close {
   display: none;
   position: absolute;
   top: -7px;
   right: -7px;
-  z-index: 5;
+  z-index: $z-index-polaroid-close;
 
   width: 15px;
   height: 14px;
@@ -20,7 +19,7 @@
   @include hide-text;
   pointer-events: all;
 
-  &:after{
+  &:after {
     position: absolute;
     top: 0;
     left: 3px;
@@ -34,6 +33,6 @@
   }
 }
 
-.polaroid.active .close{
+.polaroid.active .close {
   display: block;
 }

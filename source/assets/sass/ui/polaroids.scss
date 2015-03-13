@@ -1,13 +1,14 @@
 /**
  * Polaroids placeholder
  */
-
 @import "compass";
-@import "config";
+@import "../config";
 
-* { @include box-sizing(border-box); }
+* {
+  @include box-sizing(border-box);
+}
 
-#polaroids{
+#polaroids {
   position: relative;
   padding: $margin;
   @include clearfix;
