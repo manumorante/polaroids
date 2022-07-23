@@ -3,13 +3,12 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-  html,
-  body,
-  #root {
-    @apply h-full overflow-auto;
-  }
-
-  body {
+  html {
     @apply bg-neutral-100;
+  }
+  #root {
+    @apply h-screen;
+    height: -webkit-fill-available;
+    height: fill-available;
   }
 }
