@@ -1,6 +1,6 @@
 export default function Logo() {
   return (
-    <div className='Logo sticky top-0 left-9 w-20 z-[1001] shadow-sm'>
+    <div className='Logo fixed top-0 left-9 w-20 z-[1001] shadow-sm'>
       <div className='flex h-12'>
         <div className='bg-[#FC000A] grow'></div>
         <div className='bg-[#FC6409] grow'></div>
