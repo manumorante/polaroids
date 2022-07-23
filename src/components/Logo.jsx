@@ -1,6 +1,16 @@
 export default function Logo() {
+  // Hacer que cuando se pulse el logo, se vaya el scroll a la parte superior de la página.
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return (
-    <div className='Logo fixed top-0 left-9 w-20 z-[1001] shadow-sm'>
+    <div
+      className='Logo fixed top-0 left-9 w-20 z-[1001] shadow-sm'
+      onClick={handleClick}>
       <div className='flex h-12'>
         <div className='bg-[#FC000A] grow'></div>
         <div className='bg-[#FC6409] grow'></div>
