@@ -34,6 +34,7 @@ export default function Polaroid({ text, index }) {
       '-translate-x-1/4': par,
       '-translate-x-3/4': !par,
     },
+    'md:-translate-x-1/2',
     'w-64 h-80 inline-block p-4',
     radomRotate,
     'bg-white rounded-sm shadow-md',
