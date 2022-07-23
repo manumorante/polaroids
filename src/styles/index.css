@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-fixed bg-repeat;
+    background-image: url('/wood-mosaic.jpg');
+  }
+}
