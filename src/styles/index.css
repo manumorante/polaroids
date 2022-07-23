@@ -4,12 +4,12 @@
 
 @layer base {
   html,
+  body,
   #root {
-    @apply h-full;
+    @apply h-full overflow-auto;
   }
 
   body {
-    @apply bg-fixed bg-repeat;
-    background-image: url('/wood-mosaic.jpg');
+    @apply bg-neutral-100;
   }
 }
