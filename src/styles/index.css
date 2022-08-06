@@ -8,7 +8,6 @@
   }
   #root {
     @apply h-screen;
-    height: -webkit-fill-available;
-    height: fill-available;
+    height: stretch;
   }
 }

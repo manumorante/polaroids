@@ -8,8 +8,6 @@ export default function Bg() {
       const scrollHeight = document.body.scrollHeight
       const clientHeight = document.documentElement.clientHeight
       const scrollPercent = scrollTop / (scrollHeight - clientHeight)
-      console.clear()
-      console.log(scrollPercent)
       setScrollPercent(scrollPercent)
     }
     window.addEventListener('scroll', handleScroll)
