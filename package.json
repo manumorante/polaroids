@@ -1,10 +1,11 @@
 {
-  "name": "site",
+  "name": "polaroids",
   "private": "true",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/polaroids",
+    "deploy": "git add -f dist/ public/.nojekyll && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
     "serve": "vite preview"
   },
   "dependencies": {
