@@ -1,48 +1,20 @@
-# Vite + React + Tailwindcss Template
+# Polaroids
 
-## Installation
+Bonito efecto estilo Polaroid para tus fotos expuestas desordenadamente sobre una mesa.
 
-Typical installation with `npm i` for dependencies and `npm run dev` to start the server.
+Hecho por diversión, muestra fotos aleatorias con un estilo que las hace parecer hechas con una clásica cámara Polaroid, usando solamente CSS, más concretamente CSS Grid.
 
-## Vite
+La idea era lograr algo lo más sencillo posible con un resultado vistoso.
 
-Server is open in `http://localhost:4000` and is exposed to the network in `http://162.168...:4000` to test it in your mobile browser for example.
+Lo puedes ver en https://polaroids.manumorante.com
 
-## React
+## Detalles
 
-It is a simple configuration, with no pre-created components, no `react-router`, no `redux` or `context`... This is to make it easier to use and understand.
+![hover](https://github.com/manumorante/polaroids/assets/3266486/e418609b-b95a-4e2c-8971-21257d958610)
+Al pasar el ratón se viene al frente.
 
+![bg](https://github.com/manumorante/polaroids/assets/3266486/527fc1f7-626f-4719-a7d0-9f3d0ed3b428)
+El fondo cambia de color según avanzas
 
-## Tailwindcss
-
-It is configured to use dark mode based on a class in the html tag.
-
-```html
-<html class="dark">
-  ```
-
-Use it with `dark:your-class-name`
-
-```html
-<div class="bg-white dark:bg-dark">...</div>
-```
-
-## Deployment suggestions
-
-You can publish a static site for free and automatically on [Vercel.com](https://vercel.com/)
-
-- Create your account
-- Connect to Github
-- Click on New project
-- Import your repositioning
-- Deploy
-
-Change the domain to something like this:
-
-`project-viligal-morejander.vercel.app`
-
-To this:
-
-`my-cool-name.vercel.app`
-
-Inside your project go to `Settings` from the top menu and then to `Domains`.
+![dark-mode](https://github.com/manumorante/polaroids/assets/3266486/1eb7d257-9709-49c8-a689-ee379cab2f9c)
+Modo oscuro
