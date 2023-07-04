@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/github/manumorante/polaroids.svg)](https://wakatime.com/badge/github/manumorante/polaroids)
+
 # Polaroids
 
 Bonito efecto estilo Polaroid para tus fotos expuestas desordenadamente sobre una mesa.
