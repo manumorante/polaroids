@@ -1,5 +1,5 @@
 import React from 'react'
-import { polaroids } from '../public/polaroids'
+import { polaroids } from './polaroids'
 import Logo from './components/Logo'
 import Pile from './components/Pile'
 import Bg from './components/Bg'
